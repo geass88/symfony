@@ -1,0 +1,7 @@
+tommaso_foo_insert:
+    pattern:  /insert/{name}/{surname}/{birthdate}
+    defaults: { _controller: TommasoFooBundle:Default:insert }
+    
+tommaso_foo_list:
+    pattern:  /list
+    defaults: { _controller: TommasoFooBundle:Default:list }
