@@ -5,13 +5,14 @@ namespace Tommaso\FooBundle\Entity;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
+use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\User\User;
 /**
  * Description of User
  *
  * @author Tommaso
  */
-class User {
+class User implements UserInterface {
     //put your code here
     /**
      * @var string
@@ -33,7 +34,11 @@ class User {
      */
     private $id;
 
-
+    private $username;
+    
+    private $password;
+    
+    private $roles;
     /**
      * Set name
      *
@@ -111,5 +116,25 @@ class User {
     public function getId()
     {
         return $this->id;
+    }
+
+    public function eraseCredentials() {
+        
+    }
+
+    public function getPassword() {
+        return $this->password;
+    }
+
+    public function getRoles() {
+        return $this->roles;
+    }
+
+    public function getSalt() {
+        return null;
+    }
+
+    public function getUsername() {
+        return $this->username;
     }
 }
