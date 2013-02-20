@@ -6,7 +6,7 @@ namespace Tommaso\FooBundle\Entity;
  * and open the template in the editor.
  */
 use Symfony\Component\Security\Core\User\UserInterface;
-use Symfony\Component\Security\Core\User\User;
+//use Symfony\Component\Security\Core\User\User;
 /**
  * Description of User
  *
