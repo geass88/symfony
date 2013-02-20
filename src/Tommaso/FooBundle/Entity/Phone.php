@@ -79,4 +79,32 @@ class Phone
     {
         return $this->user;
     }
+    /**
+     * @var \Tommaso\FooBundle\Entity\User
+     */
+    private $idUser;
+
+
+    /**
+     * Set idUser
+     *
+     * @param \Tommaso\FooBundle\Entity\User $idUser
+     * @return Phone
+     */
+    public function setIdUser(\Tommaso\FooBundle\Entity\User $idUser = null)
+    {
+        $this->idUser = $idUser;
+    
+        return $this;
+    }
+
+    /**
+     * Get idUser
+     *
+     * @return \Tommaso\FooBundle\Entity\User 
+     */
+    public function getIdUser()
+    {
+        return $this->idUser;
+    }
 }
