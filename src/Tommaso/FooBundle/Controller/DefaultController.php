@@ -12,7 +12,6 @@ class DefaultController extends Controller
     public function insertAction($name, $surname, $birthdate)
     {
         //$date = date_parse($birthdate);
-        //this is a comment
         $user = new User();
         $user->setName($name)->setSurname($surname)->setBirthdate(null);
         $phone = new Phone();
